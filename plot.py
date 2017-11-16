@@ -32,13 +32,14 @@ for n in range (1000,20001,1000):
 for n in range (1000,20001,1000):
     o.append(timer(sort.insertion_sort, randnum[0:n]))
 
-q = plt.plot(x, y, marker="^", color="purple", label="quick sort")
-s = plt.plot(x, y, marker="*", color="blue", label="selection sort")
-m = plt.plot(x, y, marker="p", color="green", label="merge sort")
-b = plt.plot(x, y, marker="D", color="yellow", label="bubble sort")
-i = plt.plot(x, y, marker="s", color="red", label="insertion sort")
+plt.plot(x, y, marker="^", color="purple", label="quick sort")
+plt.plot(z, y, marker="*", color="blue", label="selection sort")
+plt.plot(w, y, marker="p", color="green", label="merge sort")
+plt.plot(u, y, marker="D", color="yellow", label="bubble sort")
+plt.plot(o, y, marker="s", color="red", label="insertion sort")
 
 plt.xlabel("Time (ms)")
 plt.ylabel("Number of Elements")
 plt.title("Time of Various Sorting Algorithms")
+plt.legend()
 plt.show()

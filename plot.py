@@ -19,17 +19,17 @@ w=[]
 u=[]
 o=[]
 
-for n in range (1000,20001,1000): 
+for n in range (1000,20000,1000): 
     y.append(n)
-for n in range (1000,20001,1000):
+for n in range (1000,20000,1000):
     x.append(timer(sort.quicksort, randnum[0:n]))
-for n in range (1000,20001,1000):
+for n in range (1000,20000,1000):
     z.append(timer(sort.selection_sort, randnum[0:n]))
-for n in range (1000,20001,1000):
+for n in range (1000,20000,1000):
     w.append(timer(sort.merge_sort, randnum[0:n]))
-for n in range (1000,20001,1000):
+for n in range (1000,20000,1000):
     u.append(timer(sort.bubble_sort, randnum[0:n]))
-for n in range (1000,20001,1000):
+for n in range (1000,20000,1000):
     o.append(timer(sort.insertion_sort, randnum[0:n]))
 
 plt.plot(x, y, marker="^", color="purple", label="quick sort")
